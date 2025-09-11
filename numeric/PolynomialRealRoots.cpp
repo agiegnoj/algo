@@ -70,7 +70,7 @@ class PolynomialRealRoots{
         T guess = null;
 
         for (int i = 0; i < 3; i++){
-            T guess = rootLaGuerre(p);
+            T guess = rootLaGuerre(p, (T)1e-5);
             if (!isnan(guess))
             guesses.push_back(guess);
         }
